@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 100px;
+  object-fit: cover;
+}
+.nav-toggle {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  color: rgb(17, 137, 177);
+  cursor: pointer;
+}
+body {
+  background-color: rgb(221, 233, 237);
+}
+.nav-center {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-icons {
+  display: none;
+}
+.links {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.links-container {
+  transition: all 0.4s linear;
+  height: 0;
+  overflow: hidden;
+}
+.links-container.show-container {
+  height: 15rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+  }
+  .nav-center {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    flex-direction: row;
+    margin: 0;
+  }
+}
