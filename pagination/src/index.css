@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-color: rgb(226, 234, 236);
+}
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.underline {
+  height: 3px;
+  width: 200px;
+  background-color: deepskyblue;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+}
+.followers {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  gap: 1rem;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+.btn {
+  background-color: deepskyblue;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: none;
+}
+.btn.active-btn {
+  background-color: black;
+}
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
